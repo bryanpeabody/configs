@@ -1,0 +1,101 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+
+    "profiles":
+    {
+        "defaults":
+        {
+            // Put settings here that you want to apply to all profiles             
+            "fontFace": "Operator Mono",
+            "fontSize": 14,
+            "colorScheme": "Github",
+            "cursorColor": "#000000"
+        },
+        "list":
+        [
+            {
+                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",                
+                "hidden": false,
+                "name": "Ubuntu-18.04",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory" : "//wsl$/Ubuntu-18.04/home/bryan"
+            },
+            {
+                // Make changes here to the powershell.exe profile
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },            
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "AtomOneLight",
+            "black": "#000000",
+            "red": "#de3e35",
+            "green": "#3f953a",
+            "yellow": "#d2b67c",
+            "blue": "#2f5af3",
+            "purple": "#950095",
+            "cyan": "#3f953a",
+            "white": "#bbbbbb",
+            "brightBlack": "#000000",
+            "brightRed": "#de3e35",
+            "brightGreen": "#3f953a",
+            "brightYellow": "#d2b67c",
+            "brightBlue": "#2f5af3",
+            "brightPurple": "#a00095",
+            "brightCyan": "#3f953a",
+            "brightWhite": "#ffffff",
+            "background": "#f9f9f9",
+            "foreground": "#2a2c33"
+        },
+        {
+            "name": "Github",
+            "black": "#3e3e3e",
+            "red": "#970b16",
+            "green": "#07962a",
+            "yellow": "#f8eec7",
+            "blue": "#003e8a",
+            "purple": "#e94691",
+            "cyan": "#89d1ec",
+            "white": "#ffffff",
+            "brightBlack": "#666666",
+            "brightRed": "#de0000",
+            "brightGreen": "#87d5a2",
+            "brightYellow": "#f1d007",
+            "brightBlue": "#2e6cba",
+            "brightPurple": "#ffa29f",
+            "brightCyan": "#1cfafe",
+            "brightWhite": "#ffffff",
+            "background": "#f4f4f4",
+            "foreground": "#3e3e3e"            
+          }          
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
+}
